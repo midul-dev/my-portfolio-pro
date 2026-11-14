@@ -12,6 +12,7 @@ import {
 } from "react-icons/si";
 import { FaLinkedin, FaFacebook } from "react-icons/fa";
 import { motion } from "motion/react";
+import Link from "next/link";
 
 const socialLinks = [
   {
@@ -104,7 +105,7 @@ export const Hero = () => {
             {/* Action Buttons: Resume & Projects */}
             <div className="flex flex-wrap items-center gap-4 pt-2 w-full sm:w-auto">
               {/* Requirement 3: Resume Download */}
-              <a
+              <Link
                 href="/Midul_Mahmud_Resume.pdf"
                 download="Midul_Mahmud_Resume.pdf"
                 target="_blank"
@@ -113,16 +114,16 @@ export const Hero = () => {
               >
                 <Download className="w-5 h-5" />
                 <span>Download Resume</span>
-              </a>
+              </Link>
 
               {/* View Projects CTA */}
-              <a
-                href="#projects"
+              <Link
+                href="/#projects"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl text-base font-semibold bg-white hover:bg-slate-100 text-slate-800 dark:bg-slate-900/80 dark:hover:bg-slate-800 dark:text-slate-200 dark:hover:text-white border border-slate-300 dark:border-slate-700/80 hover:border-sky-500/40 transition-all duration-200 hover:-translate-y-0.5 min-h-[48px] shadow-sm"
               >
                 <span>View Projects</span>
                 <ArrowRight className="w-4 h-4 text-sky-600 dark:text-sky-400" />
-              </a>
+              </Link>
             </div>
 
             {/* Requirement 4: Social Links with Tooltips */}
@@ -134,7 +135,7 @@ export const Hero = () => {
                 {socialLinks.map((item) => {
                   const Icon = item.icon;
                   return (
-                    <a
+                    <Link
                       key={item.name}
                       href={item.href}
                       target="_blank"
@@ -144,7 +145,7 @@ export const Hero = () => {
                       className={`p-2.5 rounded-lg bg-white dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 shadow-sm transition-all duration-200 min-h-[44px] min-w-[44px] flex items-center justify-center hover:-translate-y-0.5 ${item.color}`}
                     >
                       <Icon className="w-5 h-5" />
-                    </a>
+                    </Link>
                   );
                 })}
               </div>

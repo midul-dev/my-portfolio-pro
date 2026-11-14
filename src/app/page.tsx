@@ -11,9 +11,6 @@ import { Footer } from "@/components/Footer";
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 flex flex-col selection:bg-sky-500/30 selection:text-sky-400">
-      {/* Sticky Navigation Bar */}
-      <Navbar />
-
       {/* Main Content Area */}
       <main className="flex-1">
         <Hero />
@@ -23,9 +20,6 @@ export default function HomePage() {
         <Projects />
         <Contact />
       </main>
-
-      {/* Footer */}
-      <Footer />
     </div>
   );
 }

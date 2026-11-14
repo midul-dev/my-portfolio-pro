@@ -43,29 +43,29 @@ export const Footer = () => {
             </h4>
             <ul className="space-y-2 text-sm text-slate-600 dark:text-slate-400">
               <li>
-                <a href="#about" className="hover:text-sky-600 dark:hover:text-sky-400 transition-colors">
+                <Link href="/#about" className="hover:text-sky-600 dark:hover:text-sky-400 transition-colors">
                   About Me
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#skills" className="hover:text-sky-600 dark:hover:text-sky-400 transition-colors">
+                <Link href="/#skills" className="hover:text-sky-600 dark:hover:text-sky-400 transition-colors">
                   Skills &amp; Technologies
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#education" className="hover:text-sky-600 dark:hover:text-sky-400 transition-colors">
+                <Link href="/#education" className="hover:text-sky-600 dark:hover:text-sky-400 transition-colors">
                   Education &amp; Experience
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#projects" className="hover:text-sky-600 dark:hover:text-sky-400 transition-colors">
+                <Link href="/#projects" className="hover:text-sky-600 dark:hover:text-sky-400 transition-colors">
                   Flagship Projects
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#contact" className="hover:text-sky-600 dark:hover:text-sky-400 transition-colors">
+                <Link href="/#contact" className="hover:text-sky-600 dark:hover:text-sky-400 transition-colors">
                   Get In Touch
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -76,7 +76,7 @@ export const Footer = () => {
               Social Profiles
             </h4>
             <div className="flex items-center flex-wrap gap-2">
-              <a
+              <Link
                 href="https://github.com/midul-dev"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -84,8 +84,8 @@ export const Footer = () => {
                 className="p-2.5 rounded-lg bg-white border border-slate-200 dark:bg-slate-900 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:text-black dark:hover:text-white hover:border-slate-300 dark:hover:border-slate-700 transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center shadow-sm"
               >
                 <SiGithub className="w-4 h-4" />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://www.linkedin.com/in/midul-mahmud/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -93,8 +93,8 @@ export const Footer = () => {
                 className="p-2.5 rounded-lg bg-white border border-slate-200 dark:bg-slate-900 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:text-[#0A66C2] hover:border-[#0A66C2]/40 transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center shadow-sm"
               >
                 <FaLinkedin className="w-4 h-4" />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://codelab.programming-hero.com/u/midul-dev"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -102,8 +102,8 @@ export const Footer = () => {
                 className="p-2.5 rounded-lg bg-white border border-slate-200 dark:bg-slate-900 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:text-amber-500 dark:hover:text-amber-400 hover:border-amber-400/40 transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center shadow-sm"
               >
                 <Terminal className="w-4 h-4" />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://x.com/midul_dev"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -111,16 +111,16 @@ export const Footer = () => {
                 className="p-2.5 rounded-lg bg-white border border-slate-200 dark:bg-slate-900 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:text-black dark:hover:text-white hover:border-slate-300 dark:hover:border-slate-700 transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center shadow-sm"
               >
                 <SiX className="w-4 h-4" />
-              </a>
-              <a
-                href="https://facebook.com/midul.mahmud.dev"
+              </Link>
+              <Link
+                href="https://facebook.com/mi.dul1"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook profile"
                 className="p-2.5 rounded-lg bg-white border border-slate-200 dark:bg-slate-900 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:text-[#1877F2] hover:border-[#1877F2]/40 transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center shadow-sm"
               >
                 <FaFacebook className="w-4 h-4" />
-              </a>
+              </Link>
             </div>
 
             <div className="pt-2">
@@ -139,7 +139,7 @@ export const Footer = () => {
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-slate-500">
           <p>© {new Date().getFullYear()} Midul Mahmud. All rights reserved.</p>
           <p className="flex items-center gap-1.5">
-            <span>Designed &amp; Built with Next.js, TypeScript &amp; Tailwind</span>
+            <span>remote, worldwide</span>
           </p>
         </div>
       </div>

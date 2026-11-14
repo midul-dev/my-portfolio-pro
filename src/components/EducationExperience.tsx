@@ -11,6 +11,7 @@ import {
   CheckCircle2,
 } from "lucide-react";
 import { motion } from "motion/react";
+import Link from "next/link";
 
 export const EducationExperience = () => {
   return (
@@ -160,7 +161,7 @@ export const EducationExperience = () => {
                 </p>
 
                 {/* CodeLab Profile Link */}
-                <a
+                <Link
                   href="https://codelab.programming-hero.com/u/midul-dev"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -168,7 +169,7 @@ export const EducationExperience = () => {
                 >
                   <span>Verify CodeLab Profile (midul-dev)</span>
                   <ExternalLink className="w-3.5 h-3.5" />
-                </a>
+                </Link>
               </div>
 
               {/* Core Engineering Accomplishments */}

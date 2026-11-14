@@ -7,11 +7,11 @@ import { motion, AnimatePresence } from "motion/react";
 import { ThemeToggle } from "@/components/ThemeToggle";
 
 const navLinks = [
-  { name: "About", href: "#about", number: "01" },
-  { name: "Skills", href: "#skills", number: "02" },
-  { name: "Education", href: "#education", number: "03" },
-  { name: "Projects", href: "#projects", number: "04" },
-  { name: "Contact", href: "#contact", number: "05" },
+  { name: "About", href: "/#about", number: "01" },
+  { name: "Skills", href: "/#skills", number: "02" },
+  { name: "Education", href: "/#education", number: "03" },
+  { name: "Projects", href: "/#projects", number: "04" },
+  { name: "Contact", href: "/#contact", number: "05" },
 ];
 
 export const Navbar = () => {
@@ -63,7 +63,7 @@ export const Navbar = () => {
           {/* Desktop Nav Links */}
           <nav className="hidden md:flex items-center gap-1 lg:gap-2">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.name}
                 href={link.href}
                 className="px-3 py-2 text-sm font-medium text-slate-600 hover:text-sky-600 dark:text-slate-300 dark:hover:text-sky-400 transition-colors group flex items-center gap-1.5"
@@ -72,7 +72,7 @@ export const Navbar = () => {
                   {link.number}.
                 </span>
                 <span>{link.name}</span>
-              </a>
+              </Link>
             ))}
           </nav>
 
@@ -80,7 +80,7 @@ export const Navbar = () => {
           <div className="hidden md:flex items-center gap-3">
             <ThemeToggle />
 
-            <a
+            <Link
               href="/Midul_Mahmud_Resume.pdf"
               download="Midul_Mahmud_Resume.pdf"
               target="_blank"
@@ -89,7 +89,7 @@ export const Navbar = () => {
             >
               <Download className="w-4 h-4" />
               <span>Resume</span>
-            </a>
+            </Link>
           </div>
 
           {/* Mobile Right Controls: Theme Toggle & Menu Button */}
