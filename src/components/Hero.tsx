@@ -103,7 +103,7 @@ export const Hero = () => {
             </p>
 
             {/* Action Buttons: Resume & Projects */}
-            <div className="flex flex-wrap items-center gap-4 pt-2 w-full sm:w-auto">
+            <div className="flex flex-wrap items-center gap-4 justify-center pt-2 w-full sm:w-auto">
               {/* Requirement 3: Resume Download */}
               <Link
                 href="/Midul_Mahmud_Resume.pdf"

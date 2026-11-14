@@ -76,10 +76,12 @@ export default function RootLayout({
       </head>
       <body className="min-h-screen bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 font-sans antialiased selection:bg-sky-500/30 selection:text-sky-400">
         <ThemeProvider>
-          <Navbar />
-         <main>{children}</main>
-         <Footer />
-          </ThemeProvider>
+          <div className="flex flex-col min-h-screen">
+            <Navbar />
+            <main className="flex-1">{children}</main>
+            <Footer />
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   );
