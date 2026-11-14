@@ -14,7 +14,7 @@ import { motion } from "motion/react";
 
 export const About = () => {
   return (
-    <section id="about" className="py-20 md:py-28 relative scroll-mt-20">
+    <section id="about" className="py-15 md:py-28 relative scroll-mt-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Heading */}
         <div className="flex flex-col items-center md:items-start mb-14">

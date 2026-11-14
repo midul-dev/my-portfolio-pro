@@ -53,7 +53,7 @@ export const Hero = () => {
   return (
     <section
       id="home"
-      className="relative pt-12 pb-20 md:pt-20 md:pb-32 overflow-hidden"
+      className="relative pt-12 pb-15 md:pt-20 md:pb-32 overflow-hidden"
     >
       {/* Subtle background glow effect */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[350px] bg-sky-500/10 rounded-full blur-3xl pointer-events-none -z-10" />

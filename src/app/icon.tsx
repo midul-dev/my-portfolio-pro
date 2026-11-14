@@ -17,17 +17,16 @@ export default function Icon() {
           alignItems: "center",
           justifyContent: "center",
           backgroundColor: "#020617",
-          border: "1.5px solid #38bdf8",
+          border: "1.5px solid #1e293b",
           borderRadius: "8px",
-          fontFamily: "monospace",
+          color: "#38bdf8",
+          fontFamily: "system-ui, -apple-system, sans-serif",
           fontWeight: 800,
-          fontSize: "14px",
+          fontSize: "19px",
           letterSpacing: "-0.5px",
         }}
       >
-        <span style={{ color: "#38bdf8" }}>&lt;</span>
-        <span style={{ color: "#ffffff", fontWeight: 900 }}>M</span>
-        <span style={{ color: "#38bdf8" }}>/&gt;</span>
+        M
       </div>
     ),
     {
