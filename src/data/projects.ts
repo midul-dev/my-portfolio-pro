@@ -37,9 +37,9 @@ export const projectsData: Project[] = [
       "MongoDB Native",
       "jose JWT"
     ],
-    liveUrl: "https://book-nook-nine-ochre.vercel.app",
-    githubUrl: "https://github.com/midul-dev/book-nook-client",
-    githubServerUrl: "https://github.com/midul-dev/book-nook-server",
+    liveUrl: "https://book-nook-a8.vercel.app",
+    githubUrl: "https://github.com/midul-dev/book_nook",
+    githubServerUrl: "https://github.com/midul-dev/book_nook_backend",
     category: "Full-Stack / MERN",
     featured: true,
     fullDescription:
@@ -90,10 +90,10 @@ export const projectsData: Project[] = [
       "MongoDB Native",
       "RESTful APIs"
     ],
-    liveUrl: "https://bazardar-client.vercel.app",
-    githubUrl: "https://github.com/midul-dev/bazardar-client",
-    githubServerUrl: "https://github.com/midul-dev/bazardar-server",
-    category: "Full-Stack Web App",
+    liveUrl: "https://bazardar-a07.vercel.app",
+    githubUrl: "https://github.com/midul-dev/bazardor-a07",
+    githubServerUrl: "",
+    category: "Frontend Web App",
     featured: true,
     fullDescription:
       "BazarDar empowers consumers in Bangladesh to monitor, compare, and forecast daily essential commodity prices across neighborhood kitchen markets (kacha bazars). Designed with high performance and accessibility in mind, the platform aggregates price data for vegetables, meat, fish, grains, and spices, allowing shoppers to identify market variations and spot inflationary trends before heading out to shop.",
@@ -142,8 +142,8 @@ export const projectsData: Project[] = [
       "Express.js",
       "RESTful APIs"
     ],
-    liveUrl: "https://bangla-news-24.web.app",
-    githubUrl: "https://github.com/midul-dev/bangla-news-24",
+    liveUrl: "https://bangla-news-24-midul.vercel.app/",
+    githubUrl: "https://github.com/midul-dev/-bangla-news-24",
     category: "Frontend & Full-Stack",
     featured: true,
     fullDescription:

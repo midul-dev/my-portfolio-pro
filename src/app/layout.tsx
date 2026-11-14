@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
+import { ThemeProvider } from "@/context/ThemeContext";
 import "./globals.css";
 
 const inter = Inter({
@@ -28,7 +29,7 @@ export const metadata: Metadata = {
     "React Developer",
     "Frontend Developer",
     "Software Engineer",
-    "Dhaka Bangladesh"
+    "Dhaka Bangladesh",
   ],
   authors: [{ name: "Midul Mahmud" }],
   openGraph: {
@@ -46,9 +47,33 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable} scroll-smooth`}>
-      <body className="min-h-screen bg-slate-950 text-slate-100 font-sans antialiased selection:bg-sky-500/30 selection:text-sky-300">
-        {children}
+    <html
+      lang="en"
+      className={`${inter.variable} ${jetbrainsMono.variable} dark scroll-smooth`}
+      suppressHydrationWarning
+    >
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                try {
+                  var saved = localStorage.getItem('portfolio-theme');
+                  if (saved === 'light') {
+                    document.documentElement.classList.remove('dark');
+                    document.documentElement.classList.add('light');
+                  } else {
+                    document.documentElement.classList.add('dark');
+                    document.documentElement.classList.remove('light');
+                  }
+                } catch (e) {}
+              })();
+            `,
+          }}
+        />
+      </head>
+      <body className="min-h-screen bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 font-sans antialiased selection:bg-sky-500/30 selection:text-sky-400">
+        <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
   );

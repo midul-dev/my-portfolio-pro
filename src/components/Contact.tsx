@@ -144,15 +144,15 @@ export const Contact = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Heading */}
         <div className="flex flex-col items-center md:items-start mb-14">
-          <div className="flex items-center gap-2 font-mono text-xs sm:text-sm text-sky-400 mb-2">
+          <div className="flex items-center gap-2 font-mono text-xs sm:text-sm text-sky-600 dark:text-sky-400 mb-2">
             <span>05.</span>
             <span className="uppercase tracking-widest">Let&apos;s Connect</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-slate-100">
+          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-100">
             Get In Touch
           </h2>
           <div className="w-16 h-1 bg-gradient-to-r from-sky-400 to-indigo-500 rounded-full mt-3" />
-          <p className="mt-3 text-slate-400 text-sm sm:text-base max-w-2xl">
+          <p className="mt-3 text-slate-600 dark:text-slate-400 text-sm sm:text-base max-w-2xl">
             Whether you have an entry-level developer opportunity, a full-stack
             collaboration, or a question about my projects, my inbox is always
             open.
@@ -162,7 +162,7 @@ export const Contact = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
           {/* Left Column: Direct Contact Cards (Col 5) */}
           <div className="lg:col-span-5 space-y-4">
-            <h3 className="text-lg font-bold text-slate-100 mb-2">
+            <h3 className="text-lg font-bold text-slate-900 dark:text-slate-100 mb-2">
               Direct Channels
             </h3>
 
@@ -177,18 +177,18 @@ export const Contact = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-40px" }}
                   transition={{ duration: 0.35 }}
-                  className="p-5 rounded-2xl bg-slate-900/70 border border-slate-800 hover:border-sky-500/40 backdrop-blur-sm transition-all duration-200 group"
+                  className="p-5 rounded-2xl bg-white/80 dark:bg-slate-900/70 border border-slate-200 dark:border-slate-800 hover:border-sky-500/40 backdrop-blur-sm transition-all duration-200 group shadow-sm hover:shadow-md"
                 >
                   <div className="flex items-start justify-between gap-3">
                     <div className="flex items-center gap-3">
-                      <div className="p-3 rounded-xl bg-slate-950 border border-slate-800 text-sky-400 group-hover:border-sky-500/30 transition-colors">
+                      <div className="p-3 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-sky-600 dark:text-sky-400 group-hover:border-sky-500/30 transition-colors">
                         <Icon className="w-5 h-5" />
                       </div>
                       <div>
-                        <span className="text-xs font-mono uppercase tracking-wider text-slate-400">
+                        <span className="text-xs font-mono uppercase tracking-wider text-slate-500 dark:text-slate-400">
                           {method.label}
                         </span>
-                        <p className="text-sm font-semibold text-slate-100 break-all">
+                        <p className="text-sm font-semibold text-slate-900 dark:text-slate-100 break-all">
                           {method.value}
                         </p>
                       </div>
@@ -199,10 +199,10 @@ export const Contact = () => {
                       onClick={() => handleCopy(method.value)}
                       title={`Copy ${method.label}`}
                       aria-label={`Copy ${method.value} to clipboard`}
-                      className="p-2 rounded-lg bg-slate-950 border border-slate-800 text-slate-400 hover:text-white hover:border-slate-700 transition-colors min-h-[40px] min-w-[40px] flex items-center justify-center shrink-0"
+                      className="p-2 rounded-lg bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:border-slate-300 dark:hover:border-slate-700 transition-colors min-h-[40px] min-w-[40px] flex items-center justify-center shrink-0"
                     >
                       {isCopied ? (
-                        <Check className="w-4 h-4 text-emerald-400" />
+                        <Check className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
                       ) : (
                         <Copy className="w-4 h-4" />
                       )}
@@ -210,18 +210,18 @@ export const Contact = () => {
                   </div>
 
                   {/* Direct Action Link */}
-                  <div className="mt-4 pt-3 border-t border-slate-800/80 flex items-center justify-between">
+                  <div className="mt-4 pt-3 border-t border-slate-200 dark:border-slate-800/80 flex items-center justify-between">
                     <a
                       href={method.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1.5 text-xs font-semibold text-sky-400 hover:text-sky-300 transition-colors min-h-[36px]"
+                      className="inline-flex items-center gap-1.5 text-xs font-semibold text-sky-600 hover:text-sky-500 dark:text-sky-400 dark:hover:text-sky-300 transition-colors min-h-[36px]"
                     >
                       <span>{method.actionText}</span>
                       <ExternalLink className="w-3.5 h-3.5" />
                     </a>
                     {isCopied && (
-                      <span className="font-mono text-xs text-emerald-400">
+                      <span className="font-mono text-xs text-emerald-600 dark:text-emerald-400">
                         Copied to clipboard!
                       </span>
                     )}
@@ -237,17 +237,17 @@ export const Contact = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-40px" }}
             transition={{ duration: 0.4 }}
-            className="lg:col-span-7 p-6 sm:p-8 rounded-2xl bg-slate-900/70 border border-slate-800 backdrop-blur-sm shadow-xl"
+            className="lg:col-span-7 p-6 sm:p-8 rounded-2xl bg-white/80 dark:bg-slate-900/70 border border-slate-200 dark:border-slate-800 backdrop-blur-sm shadow-md dark:shadow-xl"
           >
             <div className="flex items-center gap-3 mb-6">
-              <div className="p-2.5 rounded-xl bg-sky-500/10 border border-sky-500/20 text-sky-400">
+              <div className="p-2.5 rounded-xl bg-sky-500/10 border border-sky-500/20 text-sky-600 dark:text-sky-400">
                 <MessageSquare className="w-5 h-5" />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-slate-100">
+                <h3 className="text-xl font-bold text-slate-900 dark:text-slate-100">
                   Send Me a Direct Message
                 </h3>
-                <p className="text-xs text-slate-400">
+                <p className="text-xs text-slate-500 dark:text-slate-400">
                   I typically respond within 24 hours.
                 </p>
               </div>
@@ -259,9 +259,9 @@ export const Contact = () => {
                 <div className="space-y-1.5">
                   <label
                     htmlFor="name"
-                    className="text-xs font-mono uppercase tracking-wider text-slate-300"
+                    className="text-xs font-mono uppercase tracking-wider text-slate-700 dark:text-slate-300"
                   >
-                    Your Name <span className="text-sky-400">*</span>
+                    Your Name <span className="text-sky-600 dark:text-sky-400">*</span>
                   </label>
                   <input
                     type="text"
@@ -271,7 +271,7 @@ export const Contact = () => {
                     value={formState.name}
                     onChange={handleInputChange}
                     placeholder="Midul Mahmud"
-                    className="w-full px-4 py-2.5 rounded-xl bg-slate-950/90 border border-slate-800 text-slate-100 placeholder:text-slate-600 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 text-sm transition-all min-h-[44px]"
+                    className="w-full px-4 py-2.5 rounded-xl bg-slate-50 dark:bg-slate-950/90 border border-slate-300 dark:border-slate-800 text-slate-900 dark:text-slate-100 placeholder:text-slate-400 dark:placeholder:text-slate-600 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 text-sm transition-all min-h-[44px]"
                   />
                 </div>
 
@@ -279,9 +279,9 @@ export const Contact = () => {
                 <div className="space-y-1.5">
                   <label
                     htmlFor="email"
-                    className="text-xs font-mono uppercase tracking-wider text-slate-300"
+                    className="text-xs font-mono uppercase tracking-wider text-slate-700 dark:text-slate-300"
                   >
-                    Your Email <span className="text-sky-400">*</span>
+                    Your Email <span className="text-sky-600 dark:text-sky-400">*</span>
                   </label>
                   <input
                     type="email"
@@ -291,7 +291,7 @@ export const Contact = () => {
                     value={formState.email}
                     onChange={handleInputChange}
                     placeholder="example@gmail.com"
-                    className="w-full px-4 py-2.5 rounded-xl bg-slate-950/90 border border-slate-800 text-slate-100 placeholder:text-slate-600 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 text-sm transition-all min-h-[44px]"
+                    className="w-full px-4 py-2.5 rounded-xl bg-slate-50 dark:bg-slate-950/90 border border-slate-300 dark:border-slate-800 text-slate-900 dark:text-slate-100 placeholder:text-slate-400 dark:placeholder:text-slate-600 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 text-sm transition-all min-h-[44px]"
                   />
                 </div>
               </div>
@@ -300,7 +300,7 @@ export const Contact = () => {
               <div className="space-y-1.5">
                 <label
                   htmlFor="subject"
-                  className="text-xs font-mono uppercase tracking-wider text-slate-300"
+                  className="text-xs font-mono uppercase tracking-wider text-slate-700 dark:text-slate-300"
                 >
                   Subject
                 </label>
@@ -311,7 +311,7 @@ export const Contact = () => {
                   value={formState.subject}
                   onChange={handleInputChange}
                   placeholder="Opportunity / Collaboration Inquiry"
-                  className="w-full px-4 py-2.5 rounded-xl bg-slate-950/90 border border-slate-800 text-slate-100 placeholder:text-slate-600 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 text-sm transition-all min-h-[44px]"
+                  className="w-full px-4 py-2.5 rounded-xl bg-slate-50 dark:bg-slate-950/90 border border-slate-300 dark:border-slate-800 text-slate-900 dark:text-slate-100 placeholder:text-slate-400 dark:placeholder:text-slate-600 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 text-sm transition-all min-h-[44px]"
                 />
               </div>
 
@@ -319,9 +319,9 @@ export const Contact = () => {
               <div className="space-y-1.5">
                 <label
                   htmlFor="message"
-                  className="text-xs font-mono uppercase tracking-wider text-slate-300"
+                  className="text-xs font-mono uppercase tracking-wider text-slate-700 dark:text-slate-300"
                 >
-                  Message <span className="text-sky-400">*</span>
+                  Message <span className="text-sky-600 dark:text-sky-400">*</span>
                 </label>
                 <textarea
                   id="message"
@@ -331,7 +331,7 @@ export const Contact = () => {
                   value={formState.message}
                   onChange={handleInputChange}
                   placeholder="Hi Midul, I'd like to discuss an opportunity..."
-                  className="w-full px-4 py-2.5 rounded-xl bg-slate-950/90 border border-slate-800 text-slate-100 placeholder:text-slate-600 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 text-sm transition-all resize-y min-h-[100px]"
+                  className="w-full px-4 py-2.5 rounded-xl bg-slate-50 dark:bg-slate-950/90 border border-slate-300 dark:border-slate-800 text-slate-900 dark:text-slate-100 placeholder:text-slate-400 dark:placeholder:text-slate-600 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 text-sm transition-all resize-y min-h-[100px]"
                 />
               </div>
 
@@ -340,8 +340,8 @@ export const Contact = () => {
                 <div
                   className={`p-3.5 rounded-xl text-xs sm:text-sm font-medium ${
                     formFeedback.type === "success"
-                      ? "bg-emerald-950/60 border border-emerald-500/40 text-emerald-300"
-                      : "bg-rose-950/60 border border-rose-500/40 text-rose-300"
+                      ? "bg-emerald-50 dark:bg-emerald-950/60 border border-emerald-300 dark:border-emerald-500/40 text-emerald-800 dark:text-emerald-300"
+                      : "bg-rose-50 dark:bg-rose-950/60 border border-rose-300 dark:border-rose-500/40 text-rose-800 dark:text-rose-300"
                   }`}
                 >
                   {formFeedback.message}
